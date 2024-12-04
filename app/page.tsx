@@ -1,19 +1,24 @@
 import BlogSection from "@/components/blog";
 import DiagnosisSection from "@/components/category";
+import Footer from "@/components/footer";
 import Header from "@/components/header";
 import HeroSection from "@/components/hero";
 import HeroHome from "@/components/hero";
 import PlanSection from "@/components/plan";
+import VideoCardList, { HelpIndoorPlants } from "@/components/productionStep/StepSection";
 
 
 export default function Home() {
   return (
     <main className="">
-      <Header/>
+      {/* <Header bgColor="bg-white"/> */}
       <HeroSection/>
-      <DiagnosisSection/>
+      {/* <VideoCardList/> */}
+      <HelpIndoorPlants/>
       <PlanSection/>
-      <BlogSection/>
+      <DiagnosisSection/>
+      {/* <Footer/> */}
+      {/* <BlogSection/> */}
     </main>
   );
 }

@@ -5,7 +5,6 @@ import React from 'react'
 const DiagnosisPage = () => {
   return (
     <div>
-      <Header/>
       <Diagnosis/>
     </div>
   )

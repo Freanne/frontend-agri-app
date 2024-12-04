@@ -1,0 +1,19 @@
+.custom-swiper {
+    position: relative; /* Assure que le z-index fonctionne */
+    z-index: 1; /* Change le z-index selon le besoin */
+  }
+  /* Style pour les boutons de navigation */
+  .custom-swiper .swiper-button-next,
+  .custom-swiper .swiper-button-prev {
+    color: #ff0000; /* Change la couleur des flèches de navigation */
+  }
+  
+  /* Style pour les bulles de pagination */
+  .custom-swiper .swiper-pagination-bullet {
+    background: #00ff00; /* Change la couleur des bulles */
+  }
+  
+  /* Style pour les bulles de pagination lorsqu'elles sont actives */
+  .custom-swiper .swiper-pagination-bullet-active {
+    background: #0000ff; /* Couleur pour la bulle active */
+  }

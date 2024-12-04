@@ -1,10 +1,11 @@
-import SigninClient from '@/components/signin'
+import Header from '@/components/header'
+import Login from '@/components/signin'
 import React from 'react'
 
 const Signin = () => {
   return (
     <div className='mx-auto'>
-        <SigninClient/>
+        <Login/>
     </div>
   )
 }

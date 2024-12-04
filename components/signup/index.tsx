@@ -1,48 +1,53 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react';
+import FormFarmer from './FormFarmer';
+import FormExpert from './FormExpert';
 
-const Signin = () => {
+const Inscription = () => {
+  const [activeForm, setActiveForm] = useState<string>('formOne');
+
+  const showFormOne = () => setActiveForm('formOne');
+  const showFormTwo = () => setActiveForm('formTwo');
+
   return (
-    <div className='flex items-center justify-center h-screen bg-'>
-      <div className='max-w-xl w-full mx-auto p-12 border rounded-lg '>
-        <h1 className='text-center mb-4 text-xl font-bold'>INSCRIPTION</h1>
-        <form action="" method="get">
-          <input 
-            type="text"
-            className='border w-full p-2 mb-4 bg-'
-            placeholder="Entrez votre nom d'utilisateur"
-          />
-          <input 
-            type="text"
-            className='border w-full p-2 mb-4 bg-'
-            placeholder="Entrez votre nom d'utilisateur"
-          />
-          <input 
-            type='email'
-            className='border w-full p-2 mb-4'
-            placeholder="Entrez votre mail"
-          />
-          <input 
-            type='text'
-            className='border w-full p-2 mb-4'
-            placeholder="Entrez votre numéro"
-          />
-          <input 
-            type='email'
-            className='border w-full p-2 mb-4'
-            placeholder="Entrez votre mail"
-          />
-          <input 
-            type='text'
-            className='border w-full p-2 mb-4'
-            placeholder="Entrez votre numéro"
-          />
-          <button type="submit" className='w-full p-2 bg-green-500 text-white'>
-            S&apos;inscrire
-          </button>
-        </form>
+
+    <div className="mt-10 md:max-w-6xl md:mx-auto bg-white p-6 bg-gre shadow-lg rounded-lg">
+      <h2 className="text-2xl font-bold text-center text-green-700 mb-6">S&apos;inscrire</h2>
+
+      <div className="flex justify-center mb-8">
+        <button 
+          onClick={showFormOne} 
+          className={`px-6 py-3 font-semibold transition duration-300 ease-in-out ${
+            activeForm === 'formOne'
+              ? 'bg-green-600 text-white rounded-l-lg'
+              : 'bg-gray-200 text-green-600 hover:bg-green-100'
+          }`}
+        >
+          En tant qu&apos;agriculteur
+        </button>
+        <button 
+          onClick={showFormTwo} 
+          className={`px-6 py-3 font-semibold transition duration-300 ease-in-out ${
+            activeForm === 'formTwo'
+              ? 'bg-green-600 text-white rounded-r-lg'
+              : 'bg-gray-200 text-green-600 hover:bg-green-100'
+          }`}
+        >
+          En tant qu&apos;expert agricole 
+        </button>
+      </div>
+
+      <div className="p-6 bg-green-50 border border-gray-200 rounded-lg">
+        {activeForm === 'formOne' && (
+          <FormFarmer />
+        )}
+        {activeForm === 'formTwo' && (
+          <FormExpert/>
+        )}
       </div>
     </div>
-  )
-}
 
-export default Signin
+  );
+};
+
+export default Inscription;

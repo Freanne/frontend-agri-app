@@ -5,7 +5,7 @@ export const diagnosis = [
         "description": "Formation de galles charnues et noires sur les épis, les feuilles et les tiges.",
         "pathogene": "Ustilago maydis",
         "prevention": "Utiliser des variétés résistantes, pratiquer la rotation des cultures, et contrôler les insectes.",
-        "imageUrl":"/images/diseases-mais/charbon_mais.png"
+        "imageUrl":"/images/charbon_de_mais.jpg"
     },
     {
         "id": 2,

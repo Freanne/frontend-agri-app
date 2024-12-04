@@ -4,7 +4,7 @@ import ban from '@/public/images/ban_1.jpg'
 const BlogSection = () => {
   return (
     <div>
-        <div className='w-36'>
+        <div className=''>
             <Image
                 src={ban}
                 alt=''
