@@ -37,11 +37,5 @@ export const categories = [
         videoSrc: "/videos/semis.mp4",
         description: "Découvrez comment semer correctement votre maïs pour une meilleure production.",
     }
-    
-    
-    
-
-    
-    
 
 ]

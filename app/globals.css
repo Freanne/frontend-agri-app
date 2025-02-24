@@ -4,6 +4,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* @import "swiper/swiper-bundle.min.css"; */
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -19,6 +20,18 @@
   }
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+} 
+
+#root, #__next {
+  /* Si tu es dans une application Next.js */
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
 body {
   /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -29,6 +42,47 @@ body {
     rgb(var(--background start-rgb)); */
     font-family: "Poppins", sans-serif;
 }
+
+main {
+  flex: 1;
+  /* Permet à la partie principale de prendre tout l'espace restant */
+}
+#nprogress .bar {
+  background: #15803d !important; /* Vert pour correspondre à ton design */
+  height: 4px !important;
+}
+
+/* Modal background overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+/* Modal content box */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+}
+
+/* Modal buttons */
+.modal-content button {
+  margin-top: 10px;
+}
+
 
 @layer utilities {
   .text-balance {
