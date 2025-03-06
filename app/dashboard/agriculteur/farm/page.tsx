@@ -5,7 +5,7 @@ import React from 'react'
 const Farm = () => {
   return (
     <div>
-<FarmComponent/>
+      <FarmComponent/>
     </div>
   )
 }

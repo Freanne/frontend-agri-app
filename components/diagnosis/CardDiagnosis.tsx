@@ -90,7 +90,7 @@ interface CardDiagnosisProps {
 const CardDiagnosis: React.FC<CardDiagnosisProps> = ({ images, name, pathogene, id }) => {
   const validImages = Array.isArray(images) ? images : []
   return (
-    <div className="rounded-lg bg-green-50 size-96 h-fit mx-5">
+    <div className="rounded-lg bg-green-50 size-96 h-fit m-4">
       <Swiper 
         modules={[Autoplay, Pagination]} 
         spaceBetween={10} 

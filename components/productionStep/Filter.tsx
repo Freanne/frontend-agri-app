@@ -27,7 +27,7 @@ const Filter = ({ cat }: FilterProps) => {
           id=""
           value={cat}
           onChange={handleChange}
-          className="w-full rounded-md border-0 py-3 text-base text-gray-700 shadow-sm outline-none ring-1 ring-inset bg-white ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-700"
+          className="w-full rounded-md border-0 py-3 px-3 text-base text-gray-700 shadow-sm outline-none ring-1 ring-inset bg-white ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-700"
         >
           <option value="Toutes" defaultValue={""}>
             Toutes

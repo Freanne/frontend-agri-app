@@ -18,7 +18,7 @@ const VideoCard: React.FC<VideoCardProps> = ({ videoSrc, title, description }) =
       </div>
       <div className="p-4">
         <h3 className="text-xl font-semibold text-gray-800">{title}</h3>
-        <p className="mt-2 text-gray-600">{description}</p>
+        <p className="">{description}</p>
       </div>
     </div>
   );

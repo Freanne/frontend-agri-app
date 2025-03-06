@@ -116,11 +116,16 @@ const Diagnosis = () => {
   };
 
   if (loading) {
-    return <LoadingAgriculture/>;
+    return (
+      <div className="flex justify-center items-center my-64 ">
+          <div className="animate-spin rounded-full h-10 w-10 border-t-4 border-green-500"></div>
+      </div>
+    )
+    ;
   }
 
   if (error) {
-    return <div className="text-red-500">{error}</div>;
+    return <div className="text-red-500 text-xl flex item-center justify-center my-64">{error}</div>;
   }
 
   return (
@@ -158,9 +163,9 @@ const Diagnosis = () => {
       </div>
 
       {/* Liste des cartes ou message d'absence de résultat */}
-      <div className='py-8'>
+      <div className='py-4'>
         {filterData().length > 0 ? (
-          <div className='grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-y-5'>
+          <div className='grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2'>
             {filterData().map((disease: any) => (
               <CardDiagnosis
                 key={disease.id}

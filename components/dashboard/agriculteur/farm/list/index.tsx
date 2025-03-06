@@ -100,7 +100,7 @@ const FarmListComponent = () => {
                 )}
 
 
-<div className="flex mt-4">
+            <div className="flex mt-4">
               <button
                 onClick={() => router.push(`/dashboard/agriculteur/farm/edit/${farm.id}`)}
                 className="mt-2 bg-green-600 text-white p-2 rounded-lg hover:bg-green-700 transition duration-300"
@@ -114,17 +114,6 @@ const FarmListComponent = () => {
                  Supprimer
               </button>
               </div>
-
-
-              {/* {!farm.hasCultivationPlan && (
-                <button
-                  onClick={() => router.push(`/dashboard/agriculteur/planning/create/${farm.id}`)}
-                  className="mt-2 bg-yellow-600 text-white p-2 rounded-lg hover:bg-yellow-700 transition duration-300"
-                >
-                  ➕ Créer un plan de culture
-                </button>
-              )} */}
-
             </div>
           ))}
         </div>

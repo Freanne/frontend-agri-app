@@ -53,7 +53,7 @@ const ProductionStep = () => {
 
                 {catSelected?.description ? (
                     <div
-                      className="text-lg text-gray-600"
+                      className="text-lg text-gray-600 mb-12"
                       dangerouslySetInnerHTML={{ __html: catSelected.description }}
                     />
                   ) : (

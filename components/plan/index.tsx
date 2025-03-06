@@ -34,6 +34,7 @@
 import Image from 'next/image';
 import React from 'react';
 import ban from '@/public/pot-mais.jpg'
+import Link from 'next/link';
 
 const PlanSection = () => {
   return (
@@ -57,9 +58,11 @@ const PlanSection = () => {
           <p className='text-base sm:text-lg lg:text-xl text-justify my-2'>
             Bénéficiez d&apos;un plan de culture personnalisé en fonction de vos conditions locales, de vos objectifs, et des recommandations des experts.
           </p>
-          <button className='border border-green-600 p-3 sm:p-4 rounded-lg my-5'>
+          <Link href='/signin'>
+          <button className='border border-green-600 p-3 sm:p-4 rounded-lg my-5 hover:bg-green-500 hover:text-white hover:font-semibold hover:border-0'>
             Créez votre plan ici
           </button>
+          </Link>
         </div>
     
       </div>
